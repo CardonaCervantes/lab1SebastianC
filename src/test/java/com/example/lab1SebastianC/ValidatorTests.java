@@ -54,7 +54,7 @@ public class ValidatorTests {
     void testDotInName() {
         String a = "namn.efternamn@email.se";
         boolean isDotInName = Validator.isEmailValid(a);
-        Assertions.assertFalse(isDotInName);
+        Assertions.assertTrue(isDotInName);
     }
 
     //Test 15
