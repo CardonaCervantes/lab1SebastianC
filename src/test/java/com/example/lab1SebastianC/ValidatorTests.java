@@ -11,6 +11,7 @@ public class ValidatorTests {
     @BeforeEach
     void beforeEachTest() {System.out.println("Running an individual test method");}
 
+    //Test 10
     @Test
     @DisplayName("Check if phone number contains non digits")
     void checkPhoneNumberContainsNonDigits() {
@@ -19,6 +20,7 @@ public class ValidatorTests {
         Assertions.assertFalse(containsNonDigits);
     }
 
+    //Test 11
     @Test
     @DisplayName("Check if phone number is correct")
     void checkPhoneNumberIsCorrect() {
@@ -27,6 +29,7 @@ public class ValidatorTests {
         Assertions.assertTrue(isCorrect);
     }
 
+    //Test 12
     @Test
     @DisplayName("Check if phone number starts with Zero")
     void checkPhoneNumberStartsWithZero() {
@@ -36,6 +39,7 @@ public class ValidatorTests {
         Assertions.assertFalse(startsWithZero);
     }
 
+    //Test 13
     @Test
     @DisplayName("Test if a substring is empty")
     void testEmptyString() {
@@ -44,6 +48,7 @@ public class ValidatorTests {
         Assertions.assertFalse(emptyString);
     }
 
+    //Test 14
     @Test
     @DisplayName("Test if a dot is allowed in the name")
     void testDotInName() {
@@ -52,6 +57,7 @@ public class ValidatorTests {
         Assertions.assertTrue(isDotInName);
     }
 
+    //Test 15
     @Test
     @DisplayName("Test if method throws an error if @ is not present")
     void testNoAtSign() {
